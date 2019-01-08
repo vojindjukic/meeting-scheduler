@@ -1,55 +1,52 @@
 package org.vojin.meetingscheduler.repository;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.vojin.meetingscheduler.model.User;
+import org.vojin.meetingscheduler.model.Room;
 
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
+import java.util.ArrayList;
+import java.util.List;
 
 @Repository
-public class UserDaoImpl implements UserDao {
+public class RoomDaoImpl implements RoomDao {
 
     @Autowired
     private EntityManagerFactory entityManagerFactory;
 
     @Override
-    public User getById(Integer id) {
-        Session session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
-        return session.get(User.class, id);
-    }
+    public Integer saveRoom(Room room) {
 
-    //TODO: Handle Sessions with @Transactional in UserService class
-
-    @Override
-    public List<User> getUsers() {
         Session session = null;
         try {
             session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
-            return loadAllData(User.class, session);
-        } catch (Exception e) {
+            return (Integer) session.save(room);
+        }  catch (Exception e){
             //TODO
-            return new ArrayList<>();
+            return -1;
         } finally {
             if (session != null) session.close();
         }
     }
 
     @Override
-    public Integer saveUser(User user) {
+    public Room getById(Integer roomId) {
+        Session session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
+        return session.get(Room.class, roomId);
+    }
+
+    @Override
+    public List<Room> getRooms() {
+
         Session session = null;
         try {
             session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
-            return (Integer) session.save(user);
-        }  catch (Exception e){
+            return loadAllData(Room.class, session);
+        } catch (Exception e) {
             //TODO
-            return -1;
+            return new ArrayList<>();
         } finally {
             if (session != null) session.close();
         }

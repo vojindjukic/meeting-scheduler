@@ -4,9 +4,11 @@ import org.vojin.meetingscheduler.model.User;
 
 import java.util.List;
 
-public interface UserDao {
+public interface UserDao extends GenericDao {
 
-    List getUsers();
+    User getById(Integer id);
 
-    void saveUser(User user);
+    List<User> getUsers();
+
+    Integer saveUser(User user);
 }

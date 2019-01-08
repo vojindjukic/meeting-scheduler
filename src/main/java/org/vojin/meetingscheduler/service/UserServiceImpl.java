@@ -15,12 +15,17 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    public List getUsers() {
+    public List<User> getUsers() {
         return userDao.getUsers();
     }
 
     @Override
-    public void createUser(User user) {
-        userDao.saveUser(user);
+    public Integer createUser(User user) {
+        return userDao.saveUser(user);
+    }
+
+    @Override
+    public User getById(Integer id) {
+        return userDao.getById(id);
     }
 }

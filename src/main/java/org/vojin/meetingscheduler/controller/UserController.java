@@ -18,23 +18,19 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-//    @GetMapping
-//    public ResponseEntity<List<User>> userDetails() {
-//
-//        List<User> users = userService.getUsers();
-//        return new ResponseEntity<>(users, HttpStatus.OK);
-//    }
     @GetMapping
-    public List<User> userDetails() {
+    public List<User> getUsers() {
+        return (List<User>) userService.getUsers();
+    }
 
-        List<User> users = userService.getUsers();
-        return users;
+    @GetMapping("/{id}")
+    public User getUser(@PathVariable (value = "id") Integer id){
+        return userService.getById(id);
     }
 
     @PostMapping
-    public void createUser(@RequestBody User user){
-
-        userService.createUser(user);
+    public Integer createUser(@RequestBody User user){
+        return userService.createUser(user);
     }
 
     }
