@@ -10,7 +10,7 @@ import org.vojin.meetingscheduler.service.RoomService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/room")
+@RequestMapping("/rooms")
 public class RoomController {
 
     @Autowired

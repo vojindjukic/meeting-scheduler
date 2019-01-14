@@ -1,6 +1,9 @@
 package org.vojin.meetingscheduler.model;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name="users")
@@ -16,6 +19,9 @@ public class User {
     private String lastName;
     @Column
     private String email;
+
+    @ManyToMany(mappedBy = "attendees", cascade = CascadeType.ALL)
+    private Set<Meeting> meetings = new HashSet<>();
 
     public int getId() {
         return id;
@@ -47,5 +53,34 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Set<Meeting> getMeetings() {
+        return meetings;
+    }
+
+    public void setMeetings(HashSet<Meeting> meetings) {
+        this.meetings = meetings;
+    }
+
+    public void addMeeting(Meeting meeting){
+        meetings.add(meeting);
+    }
+
+    public void removeMeeting(Meeting meeting){
+        meetings.remove(meeting);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

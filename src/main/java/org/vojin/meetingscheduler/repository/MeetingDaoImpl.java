@@ -1,36 +1,39 @@
 package org.vojin.meetingscheduler.repository;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.vojin.meetingscheduler.model.Meeting;
 
-import javax.persistence.EntityManagerFactory;
-
 @Repository
-public class MeetingDaoImpl implements MeetingDao {
+public class MeetingDaoImpl extends GenericDao implements MeetingDao {
 
     @Autowired
-    private EntityManagerFactory entityManagerFactory;
+    private UserDao userDao;
 
     @Override
     public int saveMeeting(Meeting meeting) {
-        Session session = null;
-        try {
-            session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
-            return (Integer) session.save(meeting);
-        }  catch (Exception e){
-            //TODO
-            return -1;
-        } finally {
-            if (session != null) session.close();
-        }
+        em.persist(meeting);
+        return meeting.getMeetingId();
     }
 
     @Override
-    public Meeting getMeeting(int meetingId) {
-        Session session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
-        return session.get(Meeting.class, meetingId);
+    public void updateMeeting(Meeting meeting) {
+        em.merge(meeting);
+    }
+
+    //Comented statements are not neccessery with @Transactional in @Service class
+    @Override
+    public void addUser(Integer meetingId, Integer userId){
+//        EntityTransaction transaction = em.getTransaction();
+//        transaction.begin();
+        Meeting meeting = getById(meetingId);
+        meeting.addAttendee(userDao.getById(userId));
+        em.merge(meeting);
+//        transaction.commit();
+    }
+
+    @Override
+    public Meeting getById(int meetingId){
+        return getById(Meeting.class, meetingId);
     }
 }

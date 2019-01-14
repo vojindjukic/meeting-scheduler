@@ -4,9 +4,13 @@ import org.vojin.meetingscheduler.model.Meeting;
 
 import java.util.List;
 
-public interface MeetingDao extends GenericDao {
+public interface MeetingDao {
 
     int saveMeeting(Meeting meeting);
 
-    Meeting getMeeting(int meetingId);
+    void updateMeeting(Meeting meeting);
+
+    Meeting getById(int id);
+
+    void addUser(Integer meetingId, Integer userId);
 }

@@ -14,13 +14,14 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
 @Repository
-public class UserDaoImpl implements UserDao {
+public class UserDaoImpl extends GenericDao implements UserDao {
 
     @Autowired
     private EntityManagerFactory entityManagerFactory;
 
     @Override
     public User getById(Integer id) {
+        entityManagerFactory.createEntityManager();
         Session session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
         return session.get(User.class, id);
     }

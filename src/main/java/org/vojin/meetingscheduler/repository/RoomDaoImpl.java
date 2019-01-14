@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class RoomDaoImpl implements RoomDao {
+public class RoomDaoImpl extends GenericDao implements RoomDao {
 
     @Autowired
     private EntityManagerFactory entityManagerFactory;

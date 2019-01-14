@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.time.Duration;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name="meetings")
@@ -27,8 +29,9 @@ public class Meeting {
 //    @Column
 //    private Duration duration;
 
-//    @ManyToMany
-//    private HashSet<User> attendees;
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
+    @JoinTable(name="attendees", joinColumns = @JoinColumn(name = "meetingId"), inverseJoinColumns = @JoinColumn(name = "userId", referencedColumnName = "id"))
+    private Set<User> attendees = new HashSet<>();
 
 
     public Room getRoom() {
@@ -55,4 +58,27 @@ public class Meeting {
         this.title = title;
     }
 
+    public void addAttendee(User user){
+        attendees.add(user);
+        user.addMeeting(this);
+    }
+
+    public void removeAttendee(User user){ attendees.remove(user); }
+
+    public Set<User> getAttendees() { return attendees; }
+
+    public void setAttendees(Set<User> attendees) { this.attendees = attendees; }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Meeting meeting = (Meeting) o;
+        return meetingId == meeting.meetingId;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(meetingId);
+    }
 }
