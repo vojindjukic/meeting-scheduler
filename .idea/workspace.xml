@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4847eccd-2dd4-4c60-91ff-189f41e07d8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/AuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meeting-scheduler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meeting-scheduler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/MeetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/MeetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/repository/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/repository/UserDao.class" afterDir="false" />
@@ -94,7 +70,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432">
+            <state relative-caret-position="-131">
               <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
             </state>
           </provider>
@@ -178,6 +154,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -213,8 +190,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1800" />
-    <option name="y" value="173" />
+    <option name="x" value="-36" />
+    <option name="y" value="17" />
     <option name="width" value="1378" />
     <option name="height" value="735" />
   </component>
@@ -223,7 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -321,6 +297,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,7 +307,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547819453204" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547821757477" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -368,7 +345,7 @@
       <updated>1546716894887</updated>
       <workItem from="1546716898210" duration="21154000" />
       <workItem from="1546801697784" duration="102272000" />
-      <workItem from="1547553637240" duration="41440000" />
+      <workItem from="1547553637240" duration="42860000" />
     </task>
     <task id="LOCAL-00001" summary="Created Meeting and Room Entities">
       <created>1546916088285</created>
@@ -384,18 +361,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547476085892</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DAO implementation improved - transaction management with @Transactional, Session removed, EntityManager used">
+      <created>1547819792524</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547819792525</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164866000" />
+    <option name="totallyTimeSpent" value="166286000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6430868" visible="true" weight="0.25586355" />
-      <window_info id="Structure" order="1" sideWeight="0.35691318" side_tool="true" visible="true" weight="0.25586355" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6415663" visible="true" weight="0.36308622" />
+      <window_info id="Structure" order="1" sideWeight="0.35843372" side_tool="true" visible="true" weight="0.36308622" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -404,7 +387,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37703142" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23895253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,7 +399,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.16468039" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.45662847" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -431,6 +414,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Meeting and Room Entities" />
@@ -826,7 +835,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
+        <state relative-caret-position="-131">
           <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
         </state>
       </provider>
