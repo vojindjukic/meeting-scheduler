@@ -11,4 +11,8 @@ public interface UserDao {
     List<User> getUsers();
 
     Integer saveUser(User user);
+
+    User getByEmail(String email);
+
+    User getByUsername(String username);
 }

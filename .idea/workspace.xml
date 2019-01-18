@@ -5,24 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4847eccd-2dd4-4c60-91ff-189f41e07d8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/AuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meeting-scheduler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meeting-scheduler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/MeetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/MeetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Meeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/repository/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/repository/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/repository/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/repository/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/vojin/meetingscheduler/service/UserServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/MeetingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="272">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,38 +61,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="527">
+              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1631#1632#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,47 +80,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="350">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDao.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-432">
+              <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/SecurityConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="384">
+              <caret line="62" column="67" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,12 +113,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="425">
+              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="38" column="59" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,48 +170,61 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>authorities</find>
+      <find>role</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/BeanConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Room.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Meeting.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/AuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/SecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/MeetingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1800" />
+    <option name="y" value="173" />
+    <option name="width" value="1378" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,7 +270,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="meetingscheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meeting-scheduler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meeting-scheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="meetingscheduler" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meeting-scheduler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meeting-scheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="meetingscheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="meeting-scheduler" type="b2602c69:ProjectViewProjectNode" />
@@ -278,8 +321,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +330,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547475877467" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547819453204" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -326,7 +367,8 @@
       <option name="presentableId" value="Default" />
       <updated>1546716894887</updated>
       <workItem from="1546716898210" duration="21154000" />
-      <workItem from="1546801697784" duration="90418000" />
+      <workItem from="1546801697784" duration="102272000" />
+      <workItem from="1547553637240" duration="41440000" />
     </task>
     <task id="LOCAL-00001" summary="Created Meeting and Room Entities">
       <created>1546916088285</created>
@@ -335,18 +377,25 @@
       <option name="project" value="LOCAL" />
       <updated>1546916088285</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="DAO implementation improved - transaction management with @Transactional, Session removed, EntityManager used">
+      <created>1547476085892</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547476085892</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111572000" />
+    <option name="totallyTimeSpent" value="164866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6951567" visible="true" weight="0.2249467" />
-      <window_info id="Structure" order="1" sideWeight="0.3048433" side_tool="true" visible="true" weight="0.2249467" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6430868" visible="true" weight="0.25586355" />
+      <window_info id="Structure" order="1" sideWeight="0.35691318" side_tool="true" visible="true" weight="0.25586355" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -355,7 +404,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23943663" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23895253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -364,7 +413,7 @@
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.25893825" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.16468039" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -385,7 +434,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Meeting and Room Entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Meeting and Room Entities" />
+    <MESSAGE value="DAO implementation improved - transaction management with @Transactional, Session removed, EntityManager used" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAO implementation improved - transaction management with @Transactional, Session removed, EntityManager used" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties">
@@ -406,13 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/criteria/CriteriaBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -424,60 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -529,28 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1701#1702#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/CascadeType.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -577,82 +544,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/MeetingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -667,28 +564,270 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="441">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/criteria/CriteriaQuery.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/criteria/Root.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.2.RELEASE/spring-security-core-5.1.2.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding>
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/dto/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/AuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/config/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="62" column="67" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/model/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/RoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
             <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/RoomServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/MeetingDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="527">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/service/MeetingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/controller/MeetingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/RoomDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vojin/meetingscheduler/repository/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
         </state>
       </provider>
     </entry>

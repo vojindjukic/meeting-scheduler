@@ -14,11 +14,11 @@ public abstract class GenericDao {
     protected EntityManager em;
 
     //Get all data from table
-    protected  <T> List<T> loadAllData(Class<T> type, Session session) {
-        CriteriaBuilder builder = session.getCriteriaBuilder();
+    protected  <T> List<T> loadAllData(Class<T> type) {
+        CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaQuery<T> criteria = builder.createQuery(type);
         criteria.from(type);
-        List<T> data = session.createQuery(criteria).getResultList();
+        List<T> data = em.createQuery(criteria).getResultList();
         return data;
     }
 

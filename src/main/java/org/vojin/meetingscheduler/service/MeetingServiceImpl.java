@@ -21,13 +21,6 @@ public class MeetingServiceImpl implements MeetingService {
 
     @Override
     @Transactional
-    public int createMeeting(Meeting meeting) {
-
-        return meetingDao.saveMeeting(meeting);
-    }
-
-    @Override
-    @Transactional
     public Meeting getMeeting(int meetingId) {
         return meetingDao.getById(meetingId);
     }
@@ -39,6 +32,8 @@ public class MeetingServiceImpl implements MeetingService {
         return meetingDao.saveMeeting(meeting);
     }
 
+    @Override
+    @Transactional
     public void createMeetingAndAddUser(Meeting meeting, Integer userId) {
         User user = userService.getById(userId);
         meeting.addAttendee(user);

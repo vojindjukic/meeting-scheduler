@@ -33,22 +33,29 @@ public class RoomDaoImpl extends GenericDao implements RoomDao {
 
     @Override
     public Room getById(Integer roomId) {
-        Session session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
-        return session.get(Room.class, roomId);
+        return getById(Room.class, roomId);
     }
+
+//    @Override
+//    public List<Room> getRooms() {
+//
+//        Session session = null;
+//        try {
+//            session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
+//            return loadAllData(Room.class, session);
+//        } catch (Exception e) {
+//            //TODO
+//            return new ArrayList<>();
+//        } finally {
+//            if (session != null) session.close();
+//        }
+//    }
 
     @Override
-    public List<Room> getRooms() {
+    public List<Room> getRooms(){
 
-        Session session = null;
-        try {
-            session = entityManagerFactory.unwrap(SessionFactory.class).openSession();
-            return loadAllData(Room.class, session);
-        } catch (Exception e) {
-            //TODO
-            return new ArrayList<>();
-        } finally {
-            if (session != null) session.close();
-        }
+        return loadAllData(Room.class);
     }
+
+
 }

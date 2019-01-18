@@ -14,7 +14,6 @@ public class MeetingController {
 
     @PostMapping ("/user/{id}")
     public void createMeeting(@RequestBody Meeting meeting, @PathVariable(value = "id") Integer userId){
-
         meetingService.createMeetingAndAddUser(meeting, userId);
     }
 

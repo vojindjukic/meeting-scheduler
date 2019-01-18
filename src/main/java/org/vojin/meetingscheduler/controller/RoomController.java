@@ -1,6 +1,7 @@
 package org.vojin.meetingscheduler.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.vojin.meetingscheduler.model.Meeting;
 import org.vojin.meetingscheduler.model.Room;
@@ -18,6 +19,7 @@ public class RoomController {
     @Autowired
     private MeetingService meetingService;
 
+    @PreAuthorize("hasAnyRole('ADMIN')")
     @PostMapping
     public int createRoom(@RequestBody Room room){
         return roomService.createRoom(room);
