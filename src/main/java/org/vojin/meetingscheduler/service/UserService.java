@@ -16,4 +16,7 @@ public interface UserService extends UserDetailsService {
 
     User loadUserByUsername(String username);
 
+    void promote(int id, int role);
+
+    void remove(int userId);
 }

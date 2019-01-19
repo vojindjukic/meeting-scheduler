@@ -29,7 +29,7 @@ public class Meeting {
 //    @Column
 //    private Duration duration;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name="attendees", joinColumns = @JoinColumn(name = "meetingId"), inverseJoinColumns = @JoinColumn(name = "userId", referencedColumnName = "id"))
     private Set<User> attendees = new HashSet<>();
 
@@ -63,11 +63,14 @@ public class Meeting {
         user.addMeeting(this);
     }
 
-    public void removeAttendee(User user){ attendees.remove(user); }
+    public void removeAttendee(User user){
+        attendees.remove(user); }
 
-    public Set<User> getAttendees() { return attendees; }
+    public Set<User> getAttendees() {
+        return attendees; }
 
-    public void setAttendees(Set<User> attendees) { this.attendees = attendees; }
+    public void setAttendees(Set<User> attendees) {
+        this.attendees = attendees; }
 
     @Override
     public boolean equals(Object o) {

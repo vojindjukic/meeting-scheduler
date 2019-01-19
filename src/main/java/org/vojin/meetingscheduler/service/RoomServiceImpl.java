@@ -31,4 +31,19 @@ public class RoomServiceImpl implements RoomService {
     public List<Room> getRooms() {
         return roomDao.getRooms();
     }
+
+    @Override
+    @Transactional
+    public void remove(int roomId) {
+        roomDao.remove(getRoom(roomId));
+    }
+
+    @Override
+    @Transactional
+    public void edit(int roomId, Room updatedRoom) {
+        Room room = getRoom(roomId);
+        room.setFloor(updatedRoom.getFloor());
+        room.setName(updatedRoom.getName());
+        roomDao.edit(room);
+    }
 }

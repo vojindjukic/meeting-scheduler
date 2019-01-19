@@ -1,21 +1,27 @@
 package org.vojin.meetingscheduler.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "roles")
 public class Role {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "role_id")
     private int roleId;
 
     @Column(name="role")
     private String role;
 
-    public int getRoleId() {
+    @JsonIgnore
+    @ManyToMany(mappedBy = "roles", cascade = CascadeType.ALL)
+    private Set<User> users = new HashSet<>();
 
+    public int getRoleId() {
         return roleId;
     }
 
@@ -31,9 +37,4 @@ public class Role {
         this.role = role;
     }
 
-    public Role(){};
-
-    public Role(String role){
-        this.role = role;
-    }
 }

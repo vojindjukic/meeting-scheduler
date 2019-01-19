@@ -20,7 +20,7 @@ public class Room {
     private String name;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "room")
+    @OneToMany(mappedBy = "room", cascade=CascadeType.ALL)
     private Set<Meeting> meetings;
 
     public Integer getFloor() {

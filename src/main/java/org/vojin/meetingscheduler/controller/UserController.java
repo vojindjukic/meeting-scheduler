@@ -18,25 +18,21 @@ public class UserController {
 
     @GetMapping
     public List<User> getUsers() {
-
-        return (List<User>) userService.getUsers();
+        return userService.getUsers();
     }
 
     @GetMapping("/{id}")
     public User getUser(@PathVariable (value = "id") Integer id){
-
         return userService.getById(id);
     }
 
     @PostMapping("/sign-up")
     public Integer registerUser(@RequestBody UserDto userDto){
-
         return userService.createUser(userDto);
     }
 
     @GetMapping(params = "email")
     public User getUserByEmail(@RequestParam String email){
-
         return userService.getByEmail(email);
     }
 

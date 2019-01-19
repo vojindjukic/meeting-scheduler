@@ -12,4 +12,8 @@ public interface RoomDao {
     Room getById(Integer roomId);
 
     List<Room> getRooms();
+
+    void remove(Room room);
+
+    void edit(Room room);
 }
