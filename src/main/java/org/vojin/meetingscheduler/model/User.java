@@ -6,9 +6,6 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 import java.util.*;
 
 @Entity
@@ -26,19 +23,13 @@ public class User implements UserDetails {
     @Column
     private String lastName;
 
-    @NotBlank
-    @Size(max = 255, message = "Email cant't be longer than 255 characters")
-    @Email(message = "Email should be of appropriate format")
     @Column
     private String email;
 
     @Column(unique = true)
-    @NotBlank
-//    @Size(min = 4, max = 15, message = "Username must be between 2 and 15 characters long")
     private String username;
 
-    @NotBlank
-//    @Size(min = 6, message = "Password must be at least 6 characters long")
+    @Column
     private String password;
 
     @JsonIgnore
@@ -120,7 +111,6 @@ public class User implements UserDetails {
         for (Role role : roles) {
             authorities.add(new SimpleGrantedAuthority("ROLE_" + role.getRole()));
         }
-//        authorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
         return authorities;
     }
 

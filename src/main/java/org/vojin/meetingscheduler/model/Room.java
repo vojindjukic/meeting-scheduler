@@ -14,9 +14,13 @@ public class Room {
     @Column(name="roomId", updatable = false, nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer roomId;
+
     @Column
+    @NotNull
     private Integer floor;
+
     @Column
+    @NotNull
     private String name;
 
     @JsonIgnore

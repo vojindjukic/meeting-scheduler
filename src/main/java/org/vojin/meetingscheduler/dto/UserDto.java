@@ -1,15 +1,26 @@
 package org.vojin.meetingscheduler.dto;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 public class UserDto {
 
     private String firstName;
 
     private String lastName;
 
+    @NotBlank
+    @Size(max = 255, message = "Email cant't be longer than 255 characters")
+    @Email(message = "Email should be of appropriate format")
     private String email;
 
+    @NotBlank
+    @Size(min = 4, max = 15, message = "Username must be between 4 and 15 characters long")
     private String username;
 
+    @NotBlank
+    @Size(min = 5, message = "Password must be at least 5 characters long")
     private String password;
 
     public String getFirstName() {

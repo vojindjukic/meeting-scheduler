@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.time.Duration;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -72,16 +71,4 @@ public class Meeting {
     public void setAttendees(Set<User> attendees) {
         this.attendees = attendees; }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Meeting meeting = (Meeting) o;
-        return meetingId == meeting.meetingId;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(meetingId);
-    }
 }

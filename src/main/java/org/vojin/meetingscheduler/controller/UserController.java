@@ -8,6 +8,8 @@ import org.vojin.meetingscheduler.dto.UserDto;
 import org.vojin.meetingscheduler.model.User;
 import org.vojin.meetingscheduler.service.UserService;
 
+import javax.validation.Valid;
+
 
 @RestController
 @RequestMapping("/users")
@@ -22,12 +24,12 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public User getUser(@PathVariable (value = "id") Integer id){
+    public User getUser(@PathVariable Integer id){
         return userService.getById(id);
     }
 
     @PostMapping("/sign-up")
-    public Integer registerUser(@RequestBody UserDto userDto){
+    public Integer registerUser(@Valid @RequestBody UserDto userDto){
         return userService.createUser(userDto);
     }
 
