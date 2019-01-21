@@ -1,6 +1,7 @@
 package org.vojin.meetingscheduler.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.Duration;
 import java.util.Date;
 import java.util.HashSet;
@@ -14,6 +15,9 @@ public class Meeting {
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int meetingId;
+
+    @Column
+    private String owner;
 
     @Column
     private String title;
@@ -70,5 +74,13 @@ public class Meeting {
 
     public void setAttendees(Set<User> attendees) {
         this.attendees = attendees; }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
 
 }

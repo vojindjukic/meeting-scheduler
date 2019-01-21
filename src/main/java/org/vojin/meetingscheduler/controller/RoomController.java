@@ -7,6 +7,7 @@ import org.vojin.meetingscheduler.model.Room;
 import org.vojin.meetingscheduler.service.MeetingService;
 import org.vojin.meetingscheduler.service.RoomService;
 
+import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -28,7 +29,8 @@ public class RoomController {
         return roomService.getRoom(id); }
 
     @PostMapping("/{id}/meeting")
-    public int creatMeeting(@RequestBody Meeting meeting, @PathVariable (value = "id") Integer roomId){
+    public int creatMeeting(@RequestBody Meeting meeting, @PathVariable (value = "id") Integer roomId, Principal principal){
+        meeting.setOwner(principal.getName());
         return meetingService.createMeeting(meeting, roomId);
     }
 }

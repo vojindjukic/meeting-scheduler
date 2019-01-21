@@ -19,13 +19,11 @@ public class MeetingController {
 
     @GetMapping("/{id}")
     public Meeting getUser(@PathVariable (value = "id") Integer id){
-
         return meetingService.getMeeting(id);
     }
 
     @PostMapping("/{id}/user/{userId}")
     public void inviteUser(@PathVariable(value = "id") Integer meetingId, @PathVariable(value = "userId") Integer userId){
-
         meetingService.inviteUser(meetingId, userId);
     }
 }
