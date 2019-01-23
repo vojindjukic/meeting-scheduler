@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
         user.setEmail(userDto.getEmail());
         user.setUsername(userDto.getUsername());
         user.setPassword(passwordEncoder.encode(userDto.getPassword()));
-        user.addRole(userDao.getRoleById(1));
+        user.addRole(userDao.getRoleById(1)); //basic 'User' role
         return userDao.saveUser(user);
     }
 

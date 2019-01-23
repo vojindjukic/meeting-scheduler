@@ -2,8 +2,12 @@ package org.vojin.meetingscheduler.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.vojin.meetingscheduler.dto.MeetingDto;
 import org.vojin.meetingscheduler.model.Meeting;
 import org.vojin.meetingscheduler.service.MeetingService;
+
+import javax.validation.Valid;
+import java.security.Principal;
 
 @RestController
 @RequestMapping("/meetings")
@@ -12,13 +16,14 @@ public class MeetingController {
     @Autowired
     private MeetingService meetingService;
 
-    @PostMapping ("/user/{id}")
-    public void createMeeting(@RequestBody Meeting meeting, @PathVariable(value = "id") Integer userId){
-        meetingService.createMeetingAndAddUser(meeting, userId);
+    @PostMapping
+    public int createMeeting(@Valid @RequestBody MeetingDto meetingDto, Principal principal){
+        meetingDto.setOwner(principal.getName());
+        return meetingService.createMeeting(meetingDto);
     }
 
     @GetMapping("/{id}")
-    public Meeting getUser(@PathVariable (value = "id") Integer id){
+    public Meeting getMeeting(@PathVariable (value = "id") Integer id){
         return meetingService.getMeeting(id);
     }
 

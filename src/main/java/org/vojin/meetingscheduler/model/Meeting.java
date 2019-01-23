@@ -1,7 +1,9 @@
 package org.vojin.meetingscheduler.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import java.time.Duration;
 import java.util.Date;
 import java.util.HashSet;
@@ -26,9 +28,10 @@ public class Meeting {
     @JoinColumn(name = "room")
     private Room room;
 
+    @Column
+    @Temporal(TemporalType.DATE)
+    private Date date;
 
-//    @Column
-//    private Date date;
 //    @Column
 //    private Duration duration;
 
@@ -82,5 +85,21 @@ public class Meeting {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+//    public Duration getDuration() {
+//        return duration;
+//    }
+//
+//    public void setDuration(Duration duration) {
+//        this.duration = duration;
+//    }
 
 }

@@ -1,5 +1,6 @@
 package org.vojin.meetingscheduler.service;
 
+import org.vojin.meetingscheduler.dto.MeetingDto;
 import org.vojin.meetingscheduler.model.Meeting;
 
 
@@ -11,5 +12,5 @@ public interface MeetingService {
 
     void inviteUser(Integer meetingId, Integer userId);
 
-    void createMeetingAndAddUser(Meeting meeting, Integer userId);
+    int createMeeting(MeetingDto meetingDto);
 }

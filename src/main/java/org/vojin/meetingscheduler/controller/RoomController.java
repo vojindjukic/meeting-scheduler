@@ -29,7 +29,7 @@ public class RoomController {
         return roomService.getRoom(id); }
 
     @PostMapping("/{id}/meeting")
-    public int creatMeeting(@RequestBody Meeting meeting, @PathVariable (value = "id") Integer roomId, Principal principal){
+    public int createMeeting(@RequestBody Meeting meeting, @PathVariable (value = "id") Integer roomId, Principal principal){
         meeting.setOwner(principal.getName());
         return meetingService.createMeeting(meeting, roomId);
     }
