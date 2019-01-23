@@ -1,11 +1,7 @@
 package org.vojin.meetingscheduler.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.FutureOrPresent;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
-import java.time.Duration;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,8 +25,7 @@ public class Meeting {
     private Room room;
 
     @Column
-    @Temporal(TemporalType.DATE)
-    private Date date;
+    private LocalDateTime date;
 
 //    @Column
 //    private Duration duration;
@@ -86,11 +81,11 @@ public class Meeting {
         this.owner = owner;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

@@ -1,25 +1,18 @@
 package org.vojin.meetingscheduler.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotNull;
-import java.time.Duration;
-import java.util.Date;
+import java.time.LocalDateTime;
+
 
 public class MeetingDto {
 
-//    @NotNull(message = "Time of the meeting is required.")
-//    @Past(message = "You can not schedule meeting in the past.")
-//    @DateTimeFormat(pattern = "yyyy-mm-dd hh:mm")
-//    private Date date;
 
-    @DateTimeFormat
     @NotNull(message = "Time of the meeting is required.")
     @FutureOrPresent(message = "You can not schedule meeting in the past.")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm")
-    private Date date;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm")
+    private LocalDateTime date;
 
 //    private Duration duration;
 
@@ -55,11 +48,11 @@ public class MeetingDto {
         this.roomId = roomId;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
