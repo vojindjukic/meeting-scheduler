@@ -1,6 +1,5 @@
 package org.vojin.meetingscheduler.service;
 
-import org.quartz.Scheduler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.vojin.meetingscheduler.dto.MeetingDto;
@@ -44,7 +43,8 @@ public class MeetingServiceImpl implements MeetingService {
         User user = userService.getById(userId);
         meeting.addAttendee(user);
         user.addMeeting(meeting);
-        notificationScheduler.scheduleNotification(meeting, user.getEmail());
+        notificationScheduler.scheduleInvitation(meeting, user.getEmail());
+        notificationScheduler.scheduleReminder(meeting, user.getEmail());
         meetingDao.updateMeeting(meeting);
     }
 
