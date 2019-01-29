@@ -50,7 +50,6 @@ public class NotificationScheduler {
                 .withIdentity(UUID.randomUUID().toString(), "email-jobs")
                 .withDescription("Reminder Email Job")
                 .usingJobData(jobDataMap)
-                .storeDurably()
                 .build();
     }
 

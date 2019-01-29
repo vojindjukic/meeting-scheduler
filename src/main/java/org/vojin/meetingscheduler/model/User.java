@@ -29,6 +29,7 @@ public class User implements UserDetails {
     @Column(unique = true)
     private String username;
 
+    @JsonIgnore
     @Column
     private String password;
 
@@ -36,6 +37,7 @@ public class User implements UserDetails {
     @ManyToMany(mappedBy = "attendees", cascade = CascadeType.ALL)
     private Set<Meeting> meetings = new HashSet<>();
 
+    @JsonIgnore
     @ManyToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles = new HashSet<>();

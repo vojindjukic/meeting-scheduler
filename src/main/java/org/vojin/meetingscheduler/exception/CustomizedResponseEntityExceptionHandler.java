@@ -25,9 +25,10 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
         ArrayList<String> details = new ArrayList<>();
         BindingResult result = ex.getBindingResult();
         List<FieldError> fieldErrors = result.getFieldErrors();
-        for (FieldError fieldError : fieldErrors) details.add(fieldError.getDefaultMessage());
+        for (FieldError fieldError : fieldErrors)
+            details.add(fieldError.getDefaultMessage());
 
         ErrorDetails errorDetails = new ErrorDetails(new Date(), "Validation Failed", details);
-        return new ResponseEntity(errorDetails, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 }

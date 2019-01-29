@@ -1,14 +1,19 @@
 package org.vojin.meetingscheduler.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.vojin.meetingscheduler.dto.MeetingDto;
 import org.vojin.meetingscheduler.model.Meeting;
 import org.vojin.meetingscheduler.model.User;
 import org.vojin.meetingscheduler.notification.NotificationScheduler;
 import org.vojin.meetingscheduler.repository.MeetingDao;
+import org.vojin.meetingscheduler.specification.MeetingSpecification;
 
 import javax.transaction.Transactional;
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.List;
 
 
 @Service
@@ -59,4 +64,21 @@ public class MeetingServiceImpl implements MeetingService {
 //        meeting.setDuration(meetingDto.getDuration());
         return meetingDao.saveMeeting(meeting);
     }
+
+    @Override
+    public List<Meeting> getAllMeetings() {
+        return meetingDao.getAllMeetings();
+    }
+
+    @Override
+    public List<Meeting> getMeetings(String name, LocalDateTime fromDate, LocalDateTime toDate) {
+        System.out.println(fromDate);
+        return meetingDao.getAllMeetings();
+    }
+
+    @Override
+    public List<Meeting> getMeetings(HashMap<String,Object> params) {
+        return meetingDao.getMeetings(MeetingSpecification.createSpecification(params));
+    }
+
 }
